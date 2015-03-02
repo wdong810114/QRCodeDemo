@@ -8,7 +8,7 @@
 
 #import "MainViewController.h"
 
-//#import "QRCodeGenerator.h"
+#import "QRCodeGenerator.h"
 
 @interface MainViewController ()
 
@@ -55,8 +55,8 @@
 {
     // 生成
     
-//    self.qrCodeImageView.image = [QRCodeGenerator qrImageForString:self.generateTextField.text
-//                                                         imageSize:self.qrCodeImageView.bounds.size.width];
+    self.qrCodeImageView.image = [QRCodeGenerator qrImageForString:self.generateTextField.text
+                                                         imageSize:self.qrCodeImageView.bounds.size.width];
 }
 
 - (IBAction)scanButtonClicked:(UIButton *)button
