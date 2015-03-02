@@ -42,6 +42,7 @@
     [super setNavigationBar];
     
     [self setNavigationBarTitle:@"二维码"];
+    [self setRightBarButtonItem:@selector(customScan) title:@"扫描"];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -112,6 +113,13 @@
 - (void)startScan
 {
     [_reader2 takePicture];
+}
+
+- (void)customScan
+{
+    CustomViewController *viewController = [[CustomViewController alloc] initWithNibName:@"CustomViewController" bundle:nil];
+    viewController.delegate = self;
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 #pragma mark - Private Methods
@@ -203,6 +211,13 @@
     if(!retry) {
         [self endScan];
     }
+}
+
+#pragma mark - CustomViewControllerDelegate Methods
+- (void)customViewController:(CustomViewController *)customViewController scanResult:(NSString *)scanResult qrCodeImage:(UIImage *)qrCodeImage
+{
+    self.scanResultLabel.text = scanResult;
+    self.qrCodeImageView.image = qrCodeImage;
 }
 
 @end

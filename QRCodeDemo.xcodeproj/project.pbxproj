@@ -40,6 +40,8 @@
 		8BEE65591AA450F5004A9885 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BEE65581AA450F5004A9885 /* CoreGraphics.framework */; };
 		8BEE655B1AA4519C004A9885 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BEE655A1AA4519C004A9885 /* UIKit.framework */; };
 		8BEE655D1AA451A2004A9885 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BEE655C1AA451A2004A9885 /* Foundation.framework */; };
+		8BF220881AA4594200FCFDD9 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF220861AA4594200FCFDD9 /* CustomViewController.m */; };
+		8BF220891AA4594200FCFDD9 /* CustomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BF220871AA4594200FCFDD9 /* CustomViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,9 @@
 		8BEE65581AA450F5004A9885 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8BEE655A1AA4519C004A9885 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8BEE655C1AA451A2004A9885 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8BF220851AA4594200FCFDD9 /* CustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
+		8BF220861AA4594200FCFDD9 /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
+		8BF220871AA4594200FCFDD9 /* CustomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +266,9 @@
 				8B55AE781AA0389700CBC04C /* MainViewController.h */,
 				8B55AE791AA0389700CBC04C /* MainViewController.m */,
 				8B55AE7A1AA0389700CBC04C /* MainViewController.xib */,
+				8BF220851AA4594200FCFDD9 /* CustomViewController.h */,
+				8BF220861AA4594200FCFDD9 /* CustomViewController.m */,
+				8BF220871AA4594200FCFDD9 /* CustomViewController.xib */,
 				8B55AE5F1AA0373700CBC04C /* Images.xcassets */,
 				8B55AE521AA0373700CBC04C /* Supporting Files */,
 			);
@@ -425,6 +433,7 @@
 				8B55AE8A1AA03B0B00CBC04C /* back_icon_n@2x.png in Resources */,
 				8B55AE601AA0373700CBC04C /* Images.xcassets in Resources */,
 				8B34638D1AA160EE008BE76F /* zbar-back.png in Resources */,
+				8BF220891AA4594200FCFDD9 /* CustomViewController.xib in Resources */,
 				8B55AE8D1AA03B0B00CBC04C /* back_icon_p@3x.png in Resources */,
 				8B55AE8B1AA03B0B00CBC04C /* back_icon_n@3x.png in Resources */,
 				8B55AE7C1AA0389700CBC04C /* MainViewController.xib in Resources */,
@@ -458,6 +467,7 @@
 				8BEE65511AA44D6A004A9885 /* qrspec.c in Sources */,
 				8B55AE581AA0373700CBC04C /* AppDelegate.m in Sources */,
 				8B55AE801AA0392400CBC04C /* BaseViewController.m in Sources */,
+				8BF220881AA4594200FCFDD9 /* CustomViewController.m in Sources */,
 				8BEE654D1AA44D6A004A9885 /* mask.c in Sources */,
 				8BEE65501AA44D6A004A9885 /* qrinput.c in Sources */,
 				8B55AE7B1AA0389700CBC04C /* MainViewController.m in Sources */,

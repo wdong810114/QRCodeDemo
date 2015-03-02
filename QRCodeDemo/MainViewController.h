@@ -8,7 +8,9 @@
 
 #import "BaseViewController.h"
 
-@interface MainViewController : BaseViewController <ZBarReaderDelegate>
+#import "CustomViewController.h"
+
+@interface MainViewController : BaseViewController <ZBarReaderDelegate, CustomViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *generateTextField;
 @property (weak, nonatomic) IBOutlet UIButton *generateButton;
